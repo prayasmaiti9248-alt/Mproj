@@ -11,8 +11,8 @@ app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 // Routes
-app.use("/api/products", require("../routes/productRoutes"));
-app.use("/api/orders", require("../routes/orderRoutes"));
+app.use("/api/products", require("./routes/productRoutes"));
+app.use("/api/orders", require("./routes/orderRoutes"));
 
 // Root route (for testing Render deployment)
 app.get("/", (req, res) => {
